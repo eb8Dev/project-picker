@@ -1,0 +1,48 @@
+.card {
+  perspective: 1000px;
+  width: 100px;
+  height: 140px;
+  cursor: pointer;
+}
+
+.card.disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.card-inner.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card-front {
+  background: #333;
+  color: white;
+}
+
+.card-back {
+  background: #fff;
+  color: #333;
+  transform: rotateY(180deg);
+}

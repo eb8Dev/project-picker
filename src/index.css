@@ -1,0 +1,31 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* src/index.css */
+body {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* background: #f8f9fa; */
+  padding: 2rem;
+}
+
+.setup-page {
+  /* background: white; */
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
